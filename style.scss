@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
   width: 100%;
   height: 100%;
@@ -5,32 +10,32 @@ html {
   padding: 0;
 }
 body {
- height: 100%;
- width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .topSection {
-    background-image: linear-gradient(
-        90deg,
-        rgba(213, 32, 71, 0.8) 0%,
-        rgba(215, 34, 67, 0.8) 0.01%,
-        rgba(229, 50, 43, 0.8) 21.35%,
-        rgba(236, 59, 30, 0.8) 51.55%,
-        rgba(236, 59, 30, 0.8) 51.56%,
-        rgba(236, 59, 30, 0.8) 53.65%,
-        rgba(236, 58, 31, 0.8) 77.07%,
-        rgba(236, 58, 31, 0.8) 77.08%,
-        rgba(237, 60, 29, 0.8) 97.4%,
-        rgba(237, 60, 29, 0.8) 99.97%,
-        rgba(237, 60, 29, 0.8) 99.98%,
-        rgba(237, 60, 28, 0.8) 99.99%,
-        rgba(238, 61, 27, 0.8) 100%
-      ),
-      url(./img.png);
-    background-size: cover;
-    height: 1000px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(213, 32, 71, 0.8) 0%,
+      rgba(215, 34, 67, 0.8) 0.01%,
+      rgba(229, 50, 43, 0.8) 21.35%,
+      rgba(236, 59, 30, 0.8) 51.55%,
+      rgba(236, 59, 30, 0.8) 51.56%,
+      rgba(236, 59, 30, 0.8) 53.65%,
+      rgba(236, 58, 31, 0.8) 77.07%,
+      rgba(236, 58, 31, 0.8) 77.08%,
+      rgba(237, 60, 29, 0.8) 97.4%,
+      rgba(237, 60, 29, 0.8) 99.97%,
+      rgba(237, 60, 29, 0.8) 99.98%,
+      rgba(237, 60, 28, 0.8) 99.99%,
+      rgba(238, 61, 27, 0.8) 100%
+    ),
+    url(./img.png);
+  background-size: cover;
+  height: 1000px;
 
   header {
-    max-width: 2000px;
+    max-width: 1500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,37 +83,111 @@ body {
       color: white;
     }
     .signup {
-        width: 160px;
-        height: 50px;
-        border: none;
-        background-color: white;
-        cursor: pointer;
-        border-radius: 7px;
-        color: red;
+      width: 160px;
+      height: 50px;
+      border: none;
+      margin: 30px;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 7px;
+      color: red;
     }
     & p {
-        font-size: 22px;
-        color: white;
+      font-size: 22px;
+      color: white;
     }
   }
 }
 .hero {
-    display: flex;
-    max-width: 1212px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    .description {
-        margin-top: 40px;
-        margin-right: 100px;
-        & a {
-            text-decoration: none;
-            color: red;
-        }
+  display: flex;
+  max-width: 1212px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  .description {
+    margin-top: 40px;
+    margin-right: 100px;
+    & a {
+      text-decoration: none;
+      color: red;
     }
-}
-#play {
+    & p {
+      margin-top: 40px;
+    }
+  }
+
+  #play {
     position: relative;
     bottom: 122px;
     left: 37px;
+  }
+}
+.midSection {
+  text-align: center;
+  padding-top: 100px;
+  background-color: #fafafa;
+  .features {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+  }
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 134px;
+  max-width: 1133px;
+}
+.textbox {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1084px;
+  .textbox-1 {
+    width: 293px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 32px;
+    position: relative;
+    bottom: 94px;
+    & p {
+      margin-top: 20px;
+      margin: 20px 0;
+    }
+    & a {
+      text-decoration: none;
+      color: red;
+    }
+  }
+}
+.fourthsection {
+  text-align: center;
+  padding-top: 100px;
+  background-color: #fafafa;
+  .tech {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .signs {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
