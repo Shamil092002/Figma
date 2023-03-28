@@ -33,6 +33,7 @@ body {
     url(./img.png);
   background-size: cover;
   height: 1000px;
+  background-position: center;
 
   header {
     max-width: 1500px;
@@ -41,6 +42,7 @@ body {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
   }
   .logo {
     display: flex;
@@ -104,6 +106,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  .video {
+    position: relative;
+  }
   .description {
     margin-top: 40px;
     margin-right: 100px;
@@ -117,9 +122,9 @@ body {
   }
 
   #play {
-    position: relative;
-    bottom: 122px;
-    left: 37px;
+    position: absolute;
+    top: 40%;
+    right: 93%;
   }
 }
 .midSection {
@@ -168,7 +173,6 @@ body {
 .fourthsection {
   text-align: center;
   padding-top: 100px;
-  background-color: #fafafa;
   .tech {
     font-family: "Lato";
     font-style: normal;
@@ -190,4 +194,121 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.content2 {
+  margin-top: 200px;
+  padding: 122px 165px;
+  background: #ed4c5c;
+  display: flex;
+  align-items: center;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .icons {
+      display: flex;
+      gap: 25px;
+    }
+    & h2 {
+      font-size: 36px;
+      line-height: 43px;
+      color: #ffffff;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 140%;
+      color: #ffffff;
+    }
+  }
+  .images {
+    position: relative;
+    #first {
+      position: absolute;
+      left: 20%;
+      bottom: 1px;
+      z-index: 2;
+    }
+    #second {
+      position: absolute;
+      left: 10%;
+      bottom: 5%;
+      z-index: 1;
+    }
+    #third {
+      position: relative;
+      left: 172px;
+      bottom: 20px;
+    }
+  }
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 102px 155px;
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    & h2 {
+      font-size: 36px;
+      line-height: 43px;
+    }
+    & p {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    .name {
+      display: flex;
+      gap: 30px;
+      .names {
+        border: 1px solid #333333;
+        border-radius: 6px;
+        width: 255px;
+        height: 60px;
+        padding: 21px 31px;
+      }
+    }
+    .phone {
+      .phonenumber {
+        border: 1px solid #333333;
+        border-radius: 6px;
+        width: 540px;
+        height: 60px;
+        padding: 21px 31px;
+      }
+    }
+    .select {
+      .selectservice {
+        border: 1px solid #333333;
+        border-radius: 6px;
+        width: 540px;
+        height: 60px;
+        padding: 21px 31px;
+      }
+    }
+    .submit {
+      .submitnow {
+        background: #ed4c5c;
+        border: 1.5px solid #ed4c5c;
+        border-radius: 6px;
+        width: 160px;
+        height: 50px;
+        color: white;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+.footer {
+  background: #FAFAFA;
 }
